@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TIM Design System — warm orange on cream, inspired by tim.cm brand */
+
+@layer base {
+  :root {
+    --background: 33 56% 97%;          /* cream #FBF6EE-ish */
+    --foreground: 24 30% 12%;          /* deep warm brown */
+
+    --card: 0 0% 100%;
+    --card-foreground: 24 30% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 24 30% 12%;
+
+    --primary: 18 95% 55%;             /* TIM orange */
+    --primary-foreground: 33 56% 97%;
+    --primary-glow: 28 100% 65%;       /* lighter orange for gradients */
+    --primary-deep: 14 85% 45%;        /* deeper coral */
+
+    --secondary: 33 40% 92%;
+    --secondary-foreground: 24 30% 12%;
+
+    --muted: 33 30% 94%;
+    --muted-foreground: 24 10% 40%;
+
+    --accent: 28 100% 92%;             /* peach accent */
+    --accent-foreground: 14 85% 35%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 25% 88%;
+    --input: 30 25% 88%;
+    --ring: 18 95% 55%;
+
+    --radius: 1rem;
+
+    /* Brand gradients & shadows */
+    --gradient-hero: linear-gradient(135deg, hsl(33 70% 96%) 0%, hsl(28 80% 92%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-glow)) 100%);
+    --gradient-warm: linear-gradient(180deg, hsl(33 56% 97%) 0%, hsl(28 60% 94%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(33 50% 98%) 100%);
+
+    --shadow-soft: 0 4px 20px -4px hsl(24 30% 20% / 0.08);
+    --shadow-card: 0 10px 40px -12px hsl(18 80% 40% / 0.15);
+    --shadow-glow: 0 20px 60px -20px hsl(var(--primary) / 0.45);
+    --shadow-cta: 0 12px 30px -10px hsl(var(--primary) / 0.55);
+
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 24 25% 8%;
+    --foreground: 33 40% 95%;
+    --card: 24 25% 11%;
+    --card-foreground: 33 40% 95%;
+    --popover: 24 25% 11%;
+    --popover-foreground: 33 40% 95%;
+    --primary: 18 95% 58%;
+    --primary-foreground: 24 25% 8%;
+    --secondary: 24 20% 16%;
+    --secondary-foreground: 33 40% 95%;
+    --muted: 24 20% 16%;
+    --muted-foreground: 33 15% 65%;
+    --accent: 24 20% 16%;
+    --accent-foreground: 18 95% 58%;
+    --border: 24 20% 18%;
+    --input: 24 20% 18%;
+    --ring: 18 95% 58%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "ss01", "cv11";
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+    @apply tracking-tight;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-hero { background: var(--gradient-hero); }
+  .bg-gradient-primary { background: var(--gradient-primary); }
+  .bg-gradient-warm { background: var(--gradient-warm); }
+  .bg-gradient-card { background: var(--gradient-card); }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-card { box-shadow: var(--shadow-card); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+  .shadow-cta { box-shadow: var(--shadow-cta); }
+  .transition-smooth { transition: var(--transition-smooth); }
+}
