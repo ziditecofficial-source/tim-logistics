@@ -578,7 +578,7 @@ export const I18nProvider = ({ children }: { children: ReactNode }) => {
 
   const setLang = (l: Lang) => {
     setLangState(l);
-    try { window.localStorage.setItem("tim.lang", l); } catch {}
+    try { window.localStorage.setItem("tim.lang", l); } catch { /* ignore */ }
   };
 
   useEffect(() => {

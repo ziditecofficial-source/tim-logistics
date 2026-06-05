@@ -3,6 +3,7 @@ import { useI18n } from "@/i18n/I18nProvider";
 import qrUser from "@/assets/qr-user.png";
 import qrAgent from "@/assets/qr-agent.png";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Store = ({ href, label, sub, icon: Icon }: { href: string; label: string; sub: string; icon: any }) => (
   <a href={href} target="_blank" rel="noreferrer" className="flex items-center gap-3 px-5 py-3 rounded-2xl bg-foreground text-background hover:bg-primary hover:text-primary-foreground transition-smooth">
     <Icon className="h-7 w-7" />
