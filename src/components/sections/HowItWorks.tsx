@@ -48,41 +48,32 @@ export const HowItWorks = ({ forceTab }: { forceTab?: "user" | "agent" }) => {
         </div>
       )}
 
-      {/* Steps with curved dashed connectors (alternating up/down like tim.cm) */}
-      <div className="relative grid gap-8 md:gap-4 md:grid-cols-3">
-        {/* Connector arc 1: step 1 → 2 (curves down) */}
-        <svg
-          aria-hidden
-          className="hidden md:block absolute pointer-events-none top-8 left-[16%] w-[34%] h-16 text-primary/40"
-          viewBox="0 0 200 60"
-          preserveAspectRatio="none"
-        >
-          <path d="M 5 5 Q 100 70 195 5" fill="none" stroke="currentColor" strokeWidth="2" strokeDasharray="6 6" strokeLinecap="round" />
-          <polygon points="195,5 188,2 188,12" fill="currentColor" />
-        </svg>
-        {/* Connector arc 2: step 2 → 3 (curves up) */}
-        <svg
-          aria-hidden
-          className="hidden md:block absolute pointer-events-none top-0 left-[50%] w-[34%] h-16 text-primary/40"
-          viewBox="0 0 200 60"
-          preserveAspectRatio="none"
-        >
-          <path d="M 5 55 Q 100 -10 195 55" fill="none" stroke="currentColor" strokeWidth="2" strokeDasharray="6 6" strokeLinecap="round" />
-          <polygon points="195,55 188,52 188,62" fill="currentColor" />
-        </svg>
-
+      <div className="grid gap-6 md:grid-cols-3 relative">
+        {/* Subtle background glow connecting the cards */}
+        <div className="absolute top-1/2 left-1/4 right-1/4 h-24 bg-primary/10 blur-[80px] -z-10 rounded-full hidden md:block" />
+        
         {steps.map(({ icon: Icon, titleKey, descKey }, i) => (
-          <div key={titleKey} className="relative bg-card rounded-3xl p-6 shadow-soft hover:shadow-card transition-smooth z-10">
-            <div className="flex items-center gap-4">
-              <div className="relative h-14 w-14 rounded-full border-2 border-primary/30 grid place-items-center font-display font-extrabold text-xl text-primary">
-                {i + 1}
-              </div>
-              <div className="h-12 w-12 rounded-2xl bg-gradient-primary grid place-items-center text-primary-foreground shadow-cta">
-                <Icon className="h-5 w-5" />
-              </div>
+          <div 
+            key={titleKey} 
+            className="relative bg-white dark:bg-card rounded-3xl p-8 shadow-soft border border-border/60 overflow-hidden group hover:shadow-card hover:-translate-y-2 transition-all duration-500"
+          >
+            {/* Giant Background Number */}
+            <div className="absolute -right-4 -bottom-12 text-[140px] leading-none font-display font-black text-muted/50 group-hover:text-primary/5 transition-colors pointer-events-none select-none">
+              {i + 1}
             </div>
-            <h3 className="mt-5 font-display text-lg font-bold">{t(titleKey)}</h3>
-            <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{t(descKey)}</p>
+            
+            <div className="relative z-10">
+              <div className="flex items-center justify-between mb-8">
+                <div className="h-16 w-16 rounded-2xl bg-primary/10 text-primary grid place-items-center group-hover:bg-primary group-hover:text-primary-foreground group-hover:scale-110 transition-all duration-500 shadow-sm">
+                  <Icon className="h-7 w-7" />
+                </div>
+                <div className="h-10 w-10 rounded-full border-2 border-border grid place-items-center text-muted-foreground font-bold text-sm group-hover:border-primary group-hover:text-primary transition-colors">
+                  0{i + 1}
+                </div>
+              </div>
+              <h3 className="font-display text-2xl font-extrabold mb-3 text-foreground">{t(titleKey)}</h3>
+              <p className="text-muted-foreground leading-relaxed max-w-[90%]">{t(descKey)}</p>
+            </div>
           </div>
         ))}
       </div>

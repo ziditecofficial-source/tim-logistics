@@ -77,20 +77,24 @@ export const ProductsCarousel = () => {
             <Link
               key={p.titleKey}
               to={p.href}
-              className="group relative shrink-0 w-full md:w-[42%] lg:w-[32%] xl:w-[28%] rounded-3xl overflow-hidden bg-card shadow-soft hover:shadow-card transition-smooth"
+              className="group relative shrink-0 w-full md:w-[42%] lg:w-[32%] xl:w-[28%] rounded-3xl overflow-hidden bg-card shadow-soft hover:shadow-card transition-smooth flex flex-col border border-border"
             >
-              <div className="relative aspect-[4/5] overflow-hidden">
+              {/* Top Image Half */}
+              <div className="relative h-64 w-full overflow-hidden shrink-0">
                 <img src={p.img} alt={t(p.titleKey)} loading="lazy" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-smooth duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
-                <span className="absolute top-5 left-5 px-3 py-1 rounded-full bg-card/90 backdrop-blur text-[11px] font-semibold uppercase tracking-wider">{t(p.tagKey)}</span>
-                <div className="absolute top-5 right-5 h-10 w-10 rounded-full bg-card/90 backdrop-blur grid place-items-center group-hover:bg-primary group-hover:text-primary-foreground transition-smooth">
-                  <ArrowUpRight className="h-5 w-5" />
+                <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-background/90 backdrop-blur text-[11px] font-semibold uppercase tracking-wider text-foreground">{t(p.tagKey)}</span>
+              </div>
+              
+              {/* Bottom Content Half */}
+              <div className="p-6 md:p-8 flex flex-col flex-1">
+                <div className="flex items-start justify-between gap-4 mb-3">
+                  <h3 className="font-display text-2xl font-extrabold leading-tight text-foreground group-hover:text-primary transition-colors">{t(p.titleKey)}</h3>
+                  <div className="h-10 w-10 shrink-0 rounded-full bg-muted grid place-items-center group-hover:bg-primary group-hover:text-primary-foreground transition-smooth">
+                    <ArrowUpRight className="h-5 w-5" />
+                  </div>
                 </div>
-                <div className="absolute bottom-0 inset-x-0 p-7 text-background">
-                  <h3 className="font-display text-2xl md:text-3xl font-extrabold leading-tight">{t(p.titleKey)}</h3>
-                  <p className="mt-2 text-sm text-background/85 line-clamp-3">{t(p.descKey)}</p>
-                  <span className="inline-block mt-4 text-xs font-semibold tracking-wider uppercase border-b border-background/40 pb-0.5">{t("products.learnMore")}</span>
-                </div>
+                <p className="text-sm text-muted-foreground line-clamp-3 mb-6 flex-1 leading-relaxed">{t(p.descKey)}</p>
+                <span className="inline-block mt-auto text-xs font-bold tracking-wider uppercase text-primary/80 group-hover:text-primary transition-colors">{t("products.learnMore")}</span>
               </div>
             </Link>
           ))}

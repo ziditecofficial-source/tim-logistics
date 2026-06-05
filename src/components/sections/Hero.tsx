@@ -1,115 +1,88 @@
-import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Package, MapPin, Navigation } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroSlide1 from "@/assets/hero-user.jpg";
-import heroSlide2 from "@/assets/hero-slide-2.jpg";
-import heroSlide3 from "@/assets/hero-slide-3.jpg";
+import heroBg from "@/assets/hero-slide-2.jpg";
 import { useI18n } from "@/i18n/I18nProvider";
 
 export const Hero = () => {
   const { t } = useI18n();
-  const slides = [
-    { img: heroSlide1, alt: "TimWay user ordering on the app", contain: true },
-    { img: heroSlide2, alt: "TimWay delivery agent on a scooter", contain: false },
-    { img: heroSlide3, alt: "TimWay business partners discussing logistics", contain: false },
-  ];
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const id = window.setInterval(() => setIndex((i) => (i + 1) % slides.length), 5000);
-    return () => window.clearInterval(id);
-  }, [slides.length]);
-
-  const current = slides[index];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-hero">
-      <div className="absolute inset-0 -z-0 opacity-40">
-        <div className="absolute -top-32 -right-32 h-96 w-96 rounded-full bg-primary/30 blur-3xl" />
-        <div className="absolute top-40 -left-32 h-80 w-80 rounded-full bg-primary-glow/40 blur-3xl" />
+    <section className="relative min-h-[90vh] flex flex-col justify-center bg-black overflow-hidden pt-20">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={heroBg} 
+          alt="TimWay Logistics" 
+          className="w-full h-full object-cover opacity-60 mix-blend-overlay"
+        />
+        {/* Gradients for text readability and blending into the next section */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
       </div>
-      <div className="container relative z-10 grid lg:grid-cols-2 gap-12 py-16 md:py-24 items-center">
+
+      <div className="container relative z-10 flex flex-col items-center text-center max-w-5xl mx-auto py-20 pb-32">
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex flex-col items-center"
         >
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-card/80 backdrop-blur border border-border/60 text-xs font-medium text-foreground/70 mb-6">
-            <Sparkles className="h-3.5 w-3.5 text-primary" /> {t("hero.badge")}
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-semibold text-white uppercase tracking-wider mb-8 shadow-sm">
+            {t("hero.badge")}
           </span>
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] tracking-tight">
-            {t("hero.title.1")} <span className="bg-gradient-primary bg-clip-text text-transparent [-webkit-background-clip:text]">{t("hero.title.2")}</span>
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[1.05] tracking-tight text-white drop-shadow-xl">
+            {t("hero.title.1")} <span className="text-primary">{t("hero.title.2")}</span>
           </h1>
-          <p className="mt-6 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed">{t("hero.subtitle")}</p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Button variant="hero" size="xl" asChild>
-              <Link to="/how-it-works/agents">
-                {t("hero.cta.agent")} <ArrowRight className="h-4 w-4" />
+          <p className="mt-8 text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed font-medium drop-shadow-md">
+            {t("hero.subtitle")}
+          </p>
+          <div className="mt-10 flex flex-wrap gap-4 justify-center">
+            <Button variant="hero" size="xl" className="shadow-primary-glow font-bold tracking-widest uppercase rounded-full px-8" asChild>
+              <Link to="/contact">
+                {t("hero.cta.request")} <ArrowRight className="h-5 w-5 ml-2" />
               </Link>
             </Button>
-            <Button variant="outlineWarm" size="xl" asChild>
-              <Link to="/contact">{t("hero.cta.request")}</Link>
+            <Button variant="outline" size="xl" className="bg-white/10 backdrop-blur border-white/30 text-white hover:bg-white hover:text-black font-bold tracking-widest uppercase rounded-full px-8 transition-colors" asChild>
+              <Link to="/how-it-works/agents">{t("hero.cta.agent")}</Link>
             </Button>
           </div>
-          <div className="mt-10 flex items-center gap-6 text-sm text-muted-foreground">
-            <div><span className="font-display font-bold text-foreground text-2xl">5★</span> {t("hero.stat.rating")}</div>
-            <div className="h-8 w-px bg-border" />
-            <div><span className="font-display font-bold text-foreground text-2xl">2</span> {t("hero.stat.cities")}</div>
-            <div className="h-8 w-px bg-border" />
-            <div><span className="font-display font-bold text-foreground text-2xl">5+</span> {t("hero.stat.services")}</div>
+        </motion.div>
+      </div>
+
+      {/* Floating Tracking/Booking Card */}
+      <div className="container relative z-20 -mt-24 mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          className="max-w-4xl mx-auto bg-card rounded-[2rem] shadow-card border border-border p-6 md:p-8"
+        >
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <div className="flex-1 w-full bg-muted rounded-2xl p-4 flex items-center gap-4 border border-border transition-colors focus-within:border-primary focus-within:bg-background">
+              <div className="h-10 w-10 shrink-0 rounded-full bg-background grid place-items-center shadow-sm">
+                <MapPin className="text-primary h-5 w-5" />
+              </div>
+              <div className="flex-1">
+                <p className="text-[10px] uppercase font-bold text-muted-foreground tracking-widest mb-1">Pickup Location</p>
+                <input type="text" placeholder="Enter pickup address..." className="w-full bg-transparent border-none outline-none font-medium text-foreground placeholder:text-muted-foreground/50" />
+              </div>
+            </div>
+            <div className="flex-1 w-full bg-muted rounded-2xl p-4 flex items-center gap-4 border border-border transition-colors focus-within:border-primary focus-within:bg-background">
+              <div className="h-10 w-10 shrink-0 rounded-full bg-background grid place-items-center shadow-sm">
+                <Navigation className="text-primary h-5 w-5" />
+              </div>
+              <div className="flex-1">
+                <p className="text-[10px] uppercase font-bold text-muted-foreground tracking-widest mb-1">Dropoff Location</p>
+                <input type="text" placeholder="Enter dropoff address..." className="w-full bg-transparent border-none outline-none font-medium text-foreground placeholder:text-muted-foreground/50" />
+              </div>
+            </div>
+            <Button size="xl" className="w-full md:w-auto rounded-2xl px-8 shadow-md h-full min-h-[72px]">
+              <Package className="h-5 w-5 mr-2" /> Get Estimate
+            </Button>
           </div>
         </motion.div>
-
-        {/* Slider */}
-        <div className="relative">
-          <div className="relative aspect-square max-w-lg mx-auto">
-            {/* Soft warm halo, sits BEHIND the slide */}
-            <div className="absolute inset-8 rounded-[2.5rem] bg-gradient-primary opacity-30 blur-2xl -z-0" />
-
-            <div className="relative h-full w-full rounded-[2.5rem] overflow-hidden shadow-glow bg-card">
-              <AnimatePresence mode="wait">
-                <motion.img
-                  key={index}
-                  src={current.img}
-                  alt={current.alt}
-                  initial={{ opacity: 0, scale: 1.04 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.98 }}
-                  transition={{ duration: 0.7, ease: "easeOut" }}
-                  className={`absolute inset-0 h-full w-full ${current.contain ? "object-contain p-2" : "object-cover"}`}
-                />
-              </AnimatePresence>
-            </div>
-
-            {/* Dots */}
-            <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-2">
-              {slides.map((_, i) => (
-                <button
-                  key={i}
-                  aria-label={`Slide ${i + 1}`}
-                  onClick={() => setIndex(i)}
-                  className={`h-2 rounded-full transition-smooth ${
-                    i === index ? "w-8 bg-primary" : "w-2 bg-foreground/20 hover:bg-foreground/40"
-                  }`}
-                />
-              ))}
-            </div>
-          </div>
-
-          <div className="absolute -bottom-2 -left-4 md:-left-10 bg-card rounded-2xl shadow-card p-4 flex items-center gap-3 animate-float">
-            <div className="h-10 w-10 rounded-xl bg-gradient-primary grid place-items-center text-primary-foreground font-bold">⚡</div>
-            <div>
-              <p className="text-xs text-muted-foreground">{t("hero.float.live")}</p>
-              <p className="text-sm font-semibold">{t("hero.float.eta")}</p>
-            </div>
-          </div>
-          <div className="absolute -top-4 -right-4 bg-card rounded-2xl shadow-card p-4 hidden md:block">
-            <p className="text-xs text-muted-foreground">{t("hero.float.earn")}</p>
-            <p className="font-display font-extrabold text-xl">{t("hero.float.flex")}</p>
-          </div>
-        </div>
       </div>
     </section>
   );
