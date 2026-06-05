@@ -27,7 +27,7 @@ export const FinalCTA = () => {
             </div>
           </div>
           <div className="relative rounded-3xl overflow-hidden aspect-[4/3] shadow-card">
-            <img src={rider} alt="TIM" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+            <img src={rider} alt="TimWay" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
           </div>
         </div>
       </div>

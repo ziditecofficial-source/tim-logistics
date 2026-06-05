@@ -6,7 +6,7 @@ import timLogo from "@/assets/tim-logo-light.png";
  * Full-screen modern loader shown:
  *  - on the very first paint of the app
  *  - briefly on every route change
- * Animation: orange orbital ring sweeping around the TIM "t" mark.
+ * Animation: orange orbital ring sweeping around the TimWay "t" mark.
  */
 export const PageLoader = () => {
   const location = useLocation();
@@ -50,7 +50,7 @@ export const PageLoader = () => {
           {/* Logo center */}
           <div className="absolute inset-0 grid place-items-center">
             <div className="h-16 w-16 rounded-2xl bg-card shadow-card grid place-items-center">
-              <img src={timLogo} alt="TIM" className="h-9 w-auto" />
+              <img src="/timway.png" alt="TimWay" className="h-9 w-auto" />
             </div>
           </div>
         </div>

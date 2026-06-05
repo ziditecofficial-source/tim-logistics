@@ -24,7 +24,7 @@ const Businesses = () => {
       </PageHeader>
       <section className="container py-16 md:py-20 grid lg:grid-cols-2 gap-12 items-center">
         <div className="rounded-3xl overflow-hidden shadow-card aspect-[4/3]">
-          <img src={business} alt="TIM for Businesses" loading="lazy" className="h-full w-full object-cover" />
+          <img src={business} alt="TimWay for Businesses" loading="lazy" className="h-full w-full object-cover" />
         </div>
         <div className="grid gap-4">
           {items.map(({ icon: Icon, titleKey, descKey }) => (

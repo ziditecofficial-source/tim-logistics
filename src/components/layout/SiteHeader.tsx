@@ -23,8 +23,8 @@ export const SiteHeader = () => {
   return (
     <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/80 border-b border-border/60">
       <div className="container flex h-16 md:h-20 items-center justify-between">
-        <Link to="/" className="flex items-center" aria-label="TIM home">
-          <img src={timLogo} alt="TIM" className="h-9 md:h-10 w-auto" />
+        <Link to="/" className="flex items-center" aria-label="TimWay home">
+          <img src="/timway.png" alt="TimWay" className="h-9 md:h-10 w-auto" />
         </Link>
         <nav className="hidden lg:flex items-center gap-1">
           {nav.map((n) => (

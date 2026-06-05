@@ -9,8 +9,8 @@ export const SiteFooter = () => {
     <footer className="bg-foreground text-background mt-20">
       <div className="container py-16 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-1">
-          <Link to="/" className="flex items-center" aria-label="TIM home">
-            <img src={timLogoLight} alt="TIM" className="h-11 w-auto" />
+          <Link to="/" className="flex items-center" aria-label="TimWay home">
+            <img src="/timway.png" alt="TimWay" className="h-11 w-auto" />
           </Link>
           <p className="mt-4 text-sm text-background/70 leading-relaxed">{t("footer.tagline")}</p>
           <div className="flex gap-3 mt-6">
@@ -53,7 +53,7 @@ export const SiteFooter = () => {
       </div>
       <div className="border-t border-background/10">
         <div className="container py-6 flex flex-col md:flex-row gap-3 items-center justify-between text-xs text-background/60">
-          <p>© {new Date().getFullYear()} TIM. {t("footer.rights")}</p>
+          <p>© {new Date().getFullYear()} TimWay. {t("footer.rights")}</p>
           <p>{t("footer.built")}</p>
         </div>
       </div>

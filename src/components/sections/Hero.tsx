@@ -11,9 +11,9 @@ import { useI18n } from "@/i18n/I18nProvider";
 export const Hero = () => {
   const { t } = useI18n();
   const slides = [
-    { img: heroSlide1, alt: "TIM user ordering on the app", contain: true },
-    { img: heroSlide2, alt: "TIM delivery agent on a scooter", contain: false },
-    { img: heroSlide3, alt: "TIM business partners discussing logistics", contain: false },
+    { img: heroSlide1, alt: "TimWay user ordering on the app", contain: true },
+    { img: heroSlide2, alt: "TimWay delivery agent on a scooter", contain: false },
+    { img: heroSlide3, alt: "TimWay business partners discussing logistics", contain: false },
   ];
   const [index, setIndex] = useState(0);
 

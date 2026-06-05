@@ -36,10 +36,10 @@ const Contact = () => {
           <h3 className="font-display text-3xl font-extrabold">{t("page.contact.apps.title")}</h3>
           <p className="mt-3 opacity-90">{t("page.contact.apps.desc")}</p>
           <div className="grid gap-3 mt-6">
-            <a href="https://play.google.com/store/apps/details?id=com.tim_logistics.app" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-2xl bg-background/15 hover:bg-background/25 transition-smooth">▶ TIM ({t("dl.users.tag")}) — Google Play</a>
-            <a href="https://apps.apple.com/us/app/tim-logistic/id6745712258" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-2xl bg-background/15 hover:bg-background/25 transition-smooth"> TIM ({t("dl.users.tag")}) — App Store</a>
-            <a href="https://play.google.com/store/apps/details?id=com.afrovisiongroup.tim_agent_app" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-2xl bg-background/15 hover:bg-background/25 transition-smooth">▶ TIM Agent — Google Play</a>
-            <a href="https://apps.apple.com/us/app/tim-agent/id6745712376" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-2xl bg-background/15 hover:bg-background/25 transition-smooth"> TIM Agent — App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.tim_logistics.app" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-2xl bg-background/15 hover:bg-background/25 transition-smooth">▶ TimWay ({t("dl.users.tag")}) — Google Play</a>
+            <a href="https://apps.apple.com/us/app/tim-logistic/id6745712258" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-2xl bg-background/15 hover:bg-background/25 transition-smooth"> TimWay ({t("dl.users.tag")}) — App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.afrovisiongroup.tim_agent_app" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-2xl bg-background/15 hover:bg-background/25 transition-smooth">▶ TimWay Agent — Google Play</a>
+            <a href="https://apps.apple.com/us/app/tim-agent/id6745712376" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-2xl bg-background/15 hover:bg-background/25 transition-smooth"> TimWay Agent — App Store</a>
           </div>
         </div>
       </section>

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* TIM Design System — warm orange on cream, inspired by tim.cm brand */
+/* TimWay Design System — warm orange on cream, inspired by tim.cm brand */
 
 @layer base {
   :root {
@@ -15,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 24 30% 12%;
 
-    --primary: 18 95% 55%;             /* TIM orange */
+    --primary: 18 95% 55%;             /* TimWay orange */
     --primary-foreground: 33 56% 97%;
     --primary-glow: 28 100% 65%;       /* lighter orange for gradients */
     --primary-deep: 14 85% 45%;        /* deeper coral */

@@ -16,10 +16,10 @@ const en: Dict = {
   "nav.faqs": "FAQs",
   "nav.becomeAgent": "Become an Agent",
   "nav.howItWorks": "How It Works",
-  "page.hiw.customers.title": "How TIM works for customers.",
+  "page.hiw.customers.title": "How TimWay works for customers.",
   "page.hiw.customers.subtitle": "Order food, send a parcel or book an inter-urban ride in just three simple steps — fully tracked, end to end.",
-  "page.hiw.agents.title": "How TIM works for agents.",
-  "page.hiw.agents.subtitle": "Sign up, complete a quick KYC and start earning on your own schedule with TIM's verified delivery network.",
+  "page.hiw.agents.title": "How TimWay works for agents.",
+  "page.hiw.agents.subtitle": "Sign up, complete a quick KYC and start earning on your own schedule with TimWay's verified delivery network.",
 
   // Hero
   "hero.badge": "Now serving Douala & Yaoundé",
@@ -49,10 +49,10 @@ const en: Dict = {
   "qa.bonus.desc": "Loyalty perks",
 
   // Products carousel
-  "products.eyebrow": "TIM Products",
+  "products.eyebrow": "TimWay Products",
   "products.title.1": "Reliable solutions for your",
   "products.title.2": "personal & business needs.",
-  "products.subtitle": "Discover TIM's full range of delivery, transportation and logistics services — built for life across Douala and Yaoundé.",
+  "products.subtitle": "Discover TimWay's full range of delivery, transportation and logistics services — built for life across Douala and Yaoundé.",
   "products.learnMore": "Learn more",
   "products.tag.everyday": "Everyday",
   "products.tag.logistics": "Logistics",
@@ -116,12 +116,12 @@ const en: Dict = {
 
   // Business segments
   "segments.eyebrow": "Who We Serve",
-  "segments.title": "Businesses that thrive with TIM.",
-  "segments.subtitle": "From local restaurants to growing SMEs and corporate offices — TIM adapts to how Cameroon does business.",
+  "segments.title": "Businesses that thrive with TimWay.",
+  "segments.subtitle": "From local restaurants to growing SMEs and corporate offices — TimWay adapts to how Cameroon does business.",
   "seg.restaurants.title": "Restaurants & Stores",
-  "seg.restaurants.desc": "Fulfill food and grocery orders with TIM's verified rider network. Get your meals and household essentials to customers fast.",
+  "seg.restaurants.desc": "Fulfill food and grocery orders with TimWay's verified rider network. Get your meals and household essentials to customers fast.",
   "seg.sellers.title": "Social Sellers & SMEs",
-  "seg.sellers.desc": "Send packages across Douala and Yaoundé with ease. Scale your reach with in-app ads inside the TIM platform.",
+  "seg.sellers.desc": "Send packages across Douala and Yaoundé with ease. Scale your reach with in-app ads inside the TimWay platform.",
   "seg.corporate.title": "Corporate & Offices",
   "seg.corporate.desc": "Streamline corporate deliveries, schedule airport transfers and book full office relocations with one trusted platform.",
 
@@ -146,11 +146,11 @@ const en: Dict = {
   // Testimonials
   "test.eyebrow": "What People Say",
   "test.title": "Hear from our community.",
-  "test.1.quote": "TIM has changed how we run deliveries in Douala. Orders go out faster and our customers love the live tracking.",
+  "test.1.quote": "TimWay has changed how we run deliveries in Douala. Orders go out faster and our customers love the live tracking.",
   "test.1.role": "Restaurant Owner, Douala",
   "test.2.quote": "I started as a delivery agent on weekends and it's now my main income. Simple registration, transparent earnings.",
-  "test.2.role": "TIM Delivery Agent",
-  "test.3.quote": "We used TIM for an office relocation between Yaoundé and Douala — punctual, careful, professional from end to end.",
+  "test.2.role": "TimWay Delivery Agent",
+  "test.3.quote": "We used TimWay for an office relocation between Yaoundé and Douala — punctual, careful, professional from end to end.",
   "test.3.role": "Operations Lead",
 
   // Download
@@ -173,21 +173,21 @@ const en: Dict = {
   // FAQ home + page
   "faq.eyebrow": "FAQs",
   "faq.title": "Frequently asked questions.",
-  "faq.subtitle": "Quick answers about TIM's services, agents and partnerships. Need more help? We're one click away.",
+  "faq.subtitle": "Quick answers about TimWay's services, agents and partnerships. Need more help? We're one click away.",
   "faq.contact": "Contact Support",
-  "faq.q1": "Where does TIM operate?",
-  "faq.a1": "TIM currently operates across Douala and Yaoundé in Cameroon, covering food & grocery, parcel delivery, inter-urban rides, relocations and 3rd-party rider services.",
+  "faq.q1": "Where does TimWay operate?",
+  "faq.a1": "TimWay currently operates across Douala and Yaoundé in Cameroon, covering food & grocery, parcel delivery, inter-urban rides, relocations and 3rd-party rider services.",
   "faq.q2": "How do I request a delivery or service?",
-  "faq.a2": "Use the TIM app or the contact form on tim.cm to request food, grocery, parcel delivery, relocations or a 3rd-party rider.",
+  "faq.a2": "Use the TimWay app or the contact form on tim.cm to request food, grocery, parcel delivery, relocations or a 3rd-party rider.",
   "faq.q3": "How do I become a delivery agent?",
-  "faq.a3": "Download the TIM Agent app from Google Play or the App Store and complete the streamlined registration and KYC process — it only takes a few minutes.",
+  "faq.a3": "Download the TimWay Agent app from Google Play or the App Store and complete the streamlined registration and KYC process — it only takes a few minutes.",
   "faq.q4": "How do I book an inter-urban ride?",
   "faq.a4": "Visit the Inter-urban Transportation section to book city-to-city rides between Douala and Yaoundé, or schedule a punctual airport transfer.",
   "faq.q5": "Are payments secure?",
-  "faq.a5": "Yes. TIM uses industry-leading encryption and security protocols to ensure that all transactions are safe and secure.",
-  "faq.q6": "Can businesses partner with TIM?",
+  "faq.a5": "Yes. TimWay uses industry-leading encryption and security protocols to ensure that all transactions are safe and secure.",
+  "faq.q6": "Can businesses partner with TimWay?",
   "faq.a6": "Yes. Businesses can streamline deliveries, run in-app ads and reach thousands of customers. Visit the For Businesses page to learn more.",
-  "faq.page.subtitle": "Everything you need to know about TIM's services, agents and partnerships.",
+  "faq.page.subtitle": "Everything you need to know about TimWay's services, agents and partnerships.",
 
   // Final CTA
   "cta.title": "Trusted by thousands across Cameroon.",
@@ -206,11 +206,11 @@ const en: Dict = {
   "footer.built": "Built for Cameroon. Crafted with care.",
 
   // Pages
-  "page.about.eyebrow": "About TIM",
+  "page.about.eyebrow": "About TimWay",
   "page.about.title": "Built for Cameroon's urban economy.",
-  "page.about.subtitle": "TIM is a delivery and transportation platform connecting people, businesses and verified riders across Douala and Yaoundé. One platform, every need.",
+  "page.about.subtitle": "TimWay is a delivery and transportation platform connecting people, businesses and verified riders across Douala and Yaoundé. One platform, every need.",
   "page.about.p1": "We bring together food, groceries, parcels, intercity rides, relocations and a network of verified third-party riders into a single seamless app — designed for the realities of Cameroonian cities.",
-  "page.about.p2": "From a quick lunch order to a full office relocation, from an airport transfer to scaling your business fleet, TIM is the trusted platform powering everyday movement in Douala and Yaoundé.",
+  "page.about.p2": "From a quick lunch order to a full office relocation, from an airport transfer to scaling your business fleet, TimWay is the trusted platform powering everyday movement in Douala and Yaoundé.",
 
   "page.biz.eyebrow": "For Businesses",
   "page.biz.title": "Scale your reach across Cameroon.",
@@ -219,7 +219,7 @@ const en: Dict = {
   "page.biz.streamlined.title": "Streamlined Deliveries",
   "page.biz.streamlined.desc": "Manage all your outgoing deliveries in one dashboard.",
   "page.biz.ads.title": "In-app Ads",
-  "page.biz.ads.desc": "Upload and run promotions directly inside the TIM app.",
+  "page.biz.ads.desc": "Upload and run promotions directly inside the TimWay app.",
   "page.biz.reach.title": "Reach Thousands",
   "page.biz.reach.desc": "Tap into customers across Douala and Yaoundé instantly.",
 
@@ -231,7 +231,7 @@ const en: Dict = {
   "page.partner.rider.desc": "Own a bike? Earn money on flexible hours by joining our verified rider network.",
   "page.partner.rider.cta": "Get Started",
   "page.partner.fleet.title": "Fleet Manager",
-  "page.partner.fleet.desc": "Manage and grow your own fleet of riders with TIM's logistics infrastructure.",
+  "page.partner.fleet.desc": "Manage and grow your own fleet of riders with TimWay's logistics infrastructure.",
   "page.partner.fleet.cta": "Learn More",
 
   "page.iu.eyebrow": "Inter-urban Transportation",
@@ -240,7 +240,7 @@ const en: Dict = {
 
   "page.contact.eyebrow": "Contact",
   "page.contact.title": "We'd love to hear from you.",
-  "page.contact.subtitle": "Request a service, partner with us, or get in touch with the TIM team.",
+  "page.contact.subtitle": "Request a service, partner with us, or get in touch with the TimWay team.",
   "page.contact.operating": "Operating in",
   "page.contact.reach": "Reach us",
   "page.contact.formCta": "Contact form on tim.cm",
@@ -249,7 +249,7 @@ const en: Dict = {
   "page.contact.apps.desc": "Order, manage and track on the go.",
 
   "page.blog.eyebrow": "Blog",
-  "page.blog.title": "News & updates from TIM.",
+  "page.blog.title": "News & updates from TimWay.",
   "page.blog.subtitle": "Stay in the loop on new services, city launches and partner stories.",
   "page.blog.soon.title": "Articles coming soon",
   "page.blog.soon.desc": "We're preparing fresh stories from the road. In the meantime, follow our journey on tim.cm.",
@@ -259,25 +259,25 @@ const en: Dict = {
   "hiw.eyebrow": "How It Works",
   "hiw.title.1": "Get moving in",
   "hiw.title.2": "three simple steps.",
-  "hiw.subtitle": "Whether you need a delivery or want to earn as an agent — TIM keeps every step simple, transparent and fast.",
+  "hiw.subtitle": "Whether you need a delivery or want to earn as an agent — TimWay keeps every step simple, transparent and fast.",
   "hiw.tab.user": "For Users",
   "hiw.tab.agent": "For Agents",
   "hiw.user.1.title": "Download the App",
-  "hiw.user.1.desc": "Get TIM on Google Play or the App Store and create your account in minutes.",
+  "hiw.user.1.desc": "Get TimWay on Google Play or the App Store and create your account in minutes.",
   "hiw.user.2.title": "Create a Delivery Request",
   "hiw.user.2.desc": "Order food, send a parcel, book an inter-urban ride or schedule a relocation.",
   "hiw.user.3.title": "Track and Receive Your Package",
   "hiw.user.3.desc": "Follow your verified rider in real time from pickup to drop-off, with instant notifications.",
   "hiw.agent.1.title": "Sign Up",
-  "hiw.agent.1.desc": "Download the TIM Agent app and create your account in just a few minutes.",
+  "hiw.agent.1.desc": "Download the TimWay Agent app and create your account in just a few minutes.",
   "hiw.agent.2.title": "Complete Your KYC",
   "hiw.agent.2.desc": "Submit a Government-Issued ID and Proof of Address to verify your identity securely.",
   "hiw.agent.3.title": "Start Accepting Deliveries",
   "hiw.agent.3.desc": "Go online, accept incoming requests, manage active jobs and track your earnings live.",
 
   // Download QR
-  "dl.qr.user": "Scan to download TIM",
-  "dl.qr.agent": "Scan to download TIM Agent",
+  "dl.qr.user": "Scan to download TimWay",
+  "dl.qr.agent": "Scan to download TimWay Agent",
   "dl.qr.scan": "Scan to download",
 
   // Lang switch
@@ -296,10 +296,10 @@ const fr: Dict = {
   "nav.faqs": "FAQ",
   "nav.becomeAgent": "Devenir agent",
   "nav.howItWorks": "Comment ça marche",
-  "page.hiw.customers.title": "Comment TIM fonctionne pour les clients.",
+  "page.hiw.customers.title": "Comment TimWay fonctionne pour les clients.",
   "page.hiw.customers.subtitle": "Commandez un repas, envoyez un colis ou réservez un trajet interurbain en trois étapes simples — suivi du début à la fin.",
-  "page.hiw.agents.title": "Comment TIM fonctionne pour les agents.",
-  "page.hiw.agents.subtitle": "Inscrivez-vous, complétez un KYC rapide et commencez à gagner à votre rythme avec le réseau de livraison vérifié de TIM.",
+  "page.hiw.agents.title": "Comment TimWay fonctionne pour les agents.",
+  "page.hiw.agents.subtitle": "Inscrivez-vous, complétez un KYC rapide et commencez à gagner à votre rythme avec le réseau de livraison vérifié de TimWay.",
 
   // Hero
   "hero.badge": "Disponible à Douala et Yaoundé",
@@ -329,10 +329,10 @@ const fr: Dict = {
   "qa.bonus.desc": "Avantages fidélité",
 
   // Products carousel
-  "products.eyebrow": "Produits TIM",
+  "products.eyebrow": "Produits TimWay",
   "products.title.1": "Des solutions fiables pour vos",
   "products.title.2": "besoins personnels et professionnels.",
-  "products.subtitle": "Découvrez toute la gamme de services de livraison, de transport et de logistique de TIM — pensée pour le quotidien à Douala et Yaoundé.",
+  "products.subtitle": "Découvrez toute la gamme de services de livraison, de transport et de logistique de TimWay — pensée pour le quotidien à Douala et Yaoundé.",
   "products.learnMore": "En savoir plus",
   "products.tag.everyday": "Quotidien",
   "products.tag.logistics": "Logistique",
@@ -395,12 +395,12 @@ const fr: Dict = {
 
   // Business segments
   "segments.eyebrow": "À qui nous nous adressons",
-  "segments.title": "Des entreprises qui prospèrent avec TIM.",
-  "segments.subtitle": "Des restaurants locaux aux PME en croissance et aux bureaux d'entreprise — TIM s'adapte à la façon dont le Cameroun fait des affaires.",
+  "segments.title": "Des entreprises qui prospèrent avec TimWay.",
+  "segments.subtitle": "Des restaurants locaux aux PME en croissance et aux bureaux d'entreprise — TimWay s'adapte à la façon dont le Cameroun fait des affaires.",
   "seg.restaurants.title": "Restaurants & Boutiques",
-  "seg.restaurants.desc": "Honorez vos commandes de repas et de courses avec le réseau de coursiers vérifiés TIM. Livrez vite vos clients.",
+  "seg.restaurants.desc": "Honorez vos commandes de repas et de courses avec le réseau de coursiers vérifiés TimWay. Livrez vite vos clients.",
   "seg.sellers.title": "Vendeurs sociaux & PME",
-  "seg.sellers.desc": "Envoyez des colis à Douala et Yaoundé en toute simplicité. Élargissez votre portée avec les publicités in-app TIM.",
+  "seg.sellers.desc": "Envoyez des colis à Douala et Yaoundé en toute simplicité. Élargissez votre portée avec les publicités in-app TimWay.",
   "seg.corporate.title": "Entreprises & Bureaux",
   "seg.corporate.desc": "Optimisez les livraisons, planifiez les transferts aéroport et organisez des déménagements de bureau complets sur une seule plateforme.",
 
@@ -425,11 +425,11 @@ const fr: Dict = {
   // Testimonials
   "test.eyebrow": "Ce que les gens disent",
   "test.title": "Écoutez notre communauté.",
-  "test.1.quote": "TIM a transformé notre façon de gérer les livraisons à Douala. Les commandes partent plus vite et nos clients adorent le suivi en direct.",
+  "test.1.quote": "TimWay a transformé notre façon de gérer les livraisons à Douala. Les commandes partent plus vite et nos clients adorent le suivi en direct.",
   "test.1.role": "Restauratrice, Douala",
   "test.2.quote": "J'ai commencé comme agent le week-end et c'est devenu mon revenu principal. Inscription simple, gains transparents.",
-  "test.2.role": "Agent de livraison TIM",
-  "test.3.quote": "Nous avons utilisé TIM pour un déménagement de bureau entre Yaoundé et Douala — ponctuels, soigneux et professionnels du début à la fin.",
+  "test.2.role": "Agent de livraison TimWay",
+  "test.3.quote": "Nous avons utilisé TimWay pour un déménagement de bureau entre Yaoundé et Douala — ponctuels, soigneux et professionnels du début à la fin.",
   "test.3.role": "Responsable des opérations",
 
   // Download
@@ -452,21 +452,21 @@ const fr: Dict = {
   // FAQ
   "faq.eyebrow": "FAQ",
   "faq.title": "Questions fréquentes.",
-  "faq.subtitle": "Réponses rapides sur les services, les agents et les partenariats TIM. Besoin d'aide ? Nous sommes à un clic.",
+  "faq.subtitle": "Réponses rapides sur les services, les agents et les partenariats TimWay. Besoin d'aide ? Nous sommes à un clic.",
   "faq.contact": "Contacter le support",
-  "faq.q1": "Où TIM opère-t-il ?",
-  "faq.a1": "TIM opère actuellement à Douala et Yaoundé au Cameroun, avec la livraison de repas et de courses, la livraison de colis, les trajets interurbains, les déménagements et les services de coursiers tiers.",
+  "faq.q1": "Où TimWay opère-t-il ?",
+  "faq.a1": "TimWay opère actuellement à Douala et Yaoundé au Cameroun, avec la livraison de repas et de courses, la livraison de colis, les trajets interurbains, les déménagements et les services de coursiers tiers.",
   "faq.q2": "Comment demander une livraison ou un service ?",
-  "faq.a2": "Utilisez l'application TIM ou le formulaire de contact sur tim.cm pour demander un repas, des courses, une livraison de colis, un déménagement ou un coursier tiers.",
+  "faq.a2": "Utilisez l'application TimWay ou le formulaire de contact sur tim.cm pour demander un repas, des courses, une livraison de colis, un déménagement ou un coursier tiers.",
   "faq.q3": "Comment devenir agent de livraison ?",
-  "faq.a3": "Téléchargez l'application TIM Agent depuis Google Play ou l'App Store et complétez l'inscription et la vérification KYC simplifiées — cela ne prend que quelques minutes.",
+  "faq.a3": "Téléchargez l'application TimWay Agent depuis Google Play ou l'App Store et complétez l'inscription et la vérification KYC simplifiées — cela ne prend que quelques minutes.",
   "faq.q4": "Comment réserver un trajet interurbain ?",
   "faq.a4": "Rendez-vous sur la section Transport interurbain pour réserver un trajet entre Douala et Yaoundé, ou planifier un transfert aéroport ponctuel.",
   "faq.q5": "Les paiements sont-ils sécurisés ?",
-  "faq.a5": "Oui. TIM utilise un chiffrement et des protocoles de sécurité de pointe pour garantir la sûreté de chaque transaction.",
+  "faq.a5": "Oui. TimWay utilise un chiffrement et des protocoles de sécurité de pointe pour garantir la sûreté de chaque transaction.",
   "faq.q6": "Les entreprises peuvent-elles devenir partenaires ?",
   "faq.a6": "Oui. Les entreprises peuvent optimiser les livraisons, diffuser des publicités in-app et toucher des milliers de clients. Visitez la page Pour les entreprises pour en savoir plus.",
-  "faq.page.subtitle": "Tout ce que vous devez savoir sur les services, les agents et les partenariats de TIM.",
+  "faq.page.subtitle": "Tout ce que vous devez savoir sur les services, les agents et les partenariats de TimWay.",
 
   // Final CTA
   "cta.title": "La confiance de milliers de Camerounais.",
@@ -485,11 +485,11 @@ const fr: Dict = {
   "footer.built": "Conçu pour le Cameroun. Avec soin.",
 
   // Pages
-  "page.about.eyebrow": "À propos de TIM",
+  "page.about.eyebrow": "À propos de TimWay",
   "page.about.title": "Conçu pour l'économie urbaine du Cameroun.",
-  "page.about.subtitle": "TIM est une plateforme de livraison et de transport qui connecte les particuliers, les entreprises et des coursiers vérifiés à Douala et Yaoundé. Une plateforme, tous vos besoins.",
+  "page.about.subtitle": "TimWay est une plateforme de livraison et de transport qui connecte les particuliers, les entreprises et des coursiers vérifiés à Douala et Yaoundé. Une plateforme, tous vos besoins.",
   "page.about.p1": "Nous réunissons repas, courses, colis, trajets interurbains, déménagements et un réseau de coursiers tiers vérifiés dans une seule application fluide — pensée pour la réalité des villes camerounaises.",
-  "page.about.p2": "D'une commande de déjeuner à un déménagement de bureau complet, d'un transfert aéroport à l'extension de votre flotte, TIM est la plateforme de confiance qui anime la mobilité quotidienne à Douala et Yaoundé.",
+  "page.about.p2": "D'une commande de déjeuner à un déménagement de bureau complet, d'un transfert aéroport à l'extension de votre flotte, TimWay est la plateforme de confiance qui anime la mobilité quotidienne à Douala et Yaoundé.",
 
   "page.biz.eyebrow": "Pour les entreprises",
   "page.biz.title": "Élargissez votre portée à travers le Cameroun.",
@@ -498,7 +498,7 @@ const fr: Dict = {
   "page.biz.streamlined.title": "Livraisons optimisées",
   "page.biz.streamlined.desc": "Gérez toutes vos livraisons sortantes depuis un seul tableau de bord.",
   "page.biz.ads.title": "Publicités in-app",
-  "page.biz.ads.desc": "Diffusez et lancez des promotions directement dans l'application TIM.",
+  "page.biz.ads.desc": "Diffusez et lancez des promotions directement dans l'application TimWay.",
   "page.biz.reach.title": "Touchez des milliers",
   "page.biz.reach.desc": "Atteignez instantanément les clients à Douala et Yaoundé.",
 
@@ -510,7 +510,7 @@ const fr: Dict = {
   "page.partner.rider.desc": "Vous avez une moto ? Gagnez de l'argent à votre rythme en rejoignant notre réseau de coursiers vérifiés.",
   "page.partner.rider.cta": "Commencer",
   "page.partner.fleet.title": "Gestionnaire de flotte",
-  "page.partner.fleet.desc": "Gérez et développez votre propre flotte de coursiers grâce à l'infrastructure logistique de TIM.",
+  "page.partner.fleet.desc": "Gérez et développez votre propre flotte de coursiers grâce à l'infrastructure logistique de TimWay.",
   "page.partner.fleet.cta": "En savoir plus",
 
   "page.iu.eyebrow": "Transport interurbain",
@@ -519,7 +519,7 @@ const fr: Dict = {
 
   "page.contact.eyebrow": "Contact",
   "page.contact.title": "Nous serions ravis de vous lire.",
-  "page.contact.subtitle": "Demandez un service, devenez partenaire ou contactez l'équipe TIM.",
+  "page.contact.subtitle": "Demandez un service, devenez partenaire ou contactez l'équipe TimWay.",
   "page.contact.operating": "Présent à",
   "page.contact.reach": "Joignez-nous",
   "page.contact.formCta": "Formulaire de contact sur tim.cm",
@@ -528,7 +528,7 @@ const fr: Dict = {
   "page.contact.apps.desc": "Commandez, gérez et suivez en déplacement.",
 
   "page.blog.eyebrow": "Blog",
-  "page.blog.title": "Actualités et nouveautés TIM.",
+  "page.blog.title": "Actualités et nouveautés TimWay.",
   "page.blog.subtitle": "Restez informé des nouveaux services, ouvertures de villes et histoires de partenaires.",
   "page.blog.soon.title": "Articles bientôt disponibles",
   "page.blog.soon.desc": "Nous préparons de nouveaux récits du terrain. En attendant, suivez notre actualité sur tim.cm.",
@@ -538,25 +538,25 @@ const fr: Dict = {
   "hiw.eyebrow": "Comment ça marche",
   "hiw.title.1": "Lancez-vous en",
   "hiw.title.2": "trois étapes simples.",
-  "hiw.subtitle": "Que vous ayez besoin d'une livraison ou souhaitiez gagner en tant qu'agent — TIM garde chaque étape simple, transparente et rapide.",
+  "hiw.subtitle": "Que vous ayez besoin d'une livraison ou souhaitiez gagner en tant qu'agent — TimWay garde chaque étape simple, transparente et rapide.",
   "hiw.tab.user": "Pour les utilisateurs",
   "hiw.tab.agent": "Pour les agents",
   "hiw.user.1.title": "Téléchargez l'application",
-  "hiw.user.1.desc": "Obtenez TIM sur Google Play ou l'App Store et créez votre compte en quelques minutes.",
+  "hiw.user.1.desc": "Obtenez TimWay sur Google Play ou l'App Store et créez votre compte en quelques minutes.",
   "hiw.user.2.title": "Créez une demande de livraison",
   "hiw.user.2.desc": "Commandez à manger, envoyez un colis, réservez un trajet interurbain ou planifiez un déménagement.",
   "hiw.user.3.title": "Suivez et recevez votre colis",
   "hiw.user.3.desc": "Suivez votre coursier vérifié en temps réel, de l'enlèvement à la livraison, avec des notifications instantanées.",
   "hiw.agent.1.title": "Inscrivez-vous",
-  "hiw.agent.1.desc": "Téléchargez l'application TIM Agent et créez votre compte en quelques minutes.",
+  "hiw.agent.1.desc": "Téléchargez l'application TimWay Agent et créez votre compte en quelques minutes.",
   "hiw.agent.2.title": "Complétez votre KYC",
   "hiw.agent.2.desc": "Soumettez une pièce d'identité officielle et un justificatif de domicile pour vérifier votre identité en toute sécurité.",
   "hiw.agent.3.title": "Commencez à accepter des livraisons",
   "hiw.agent.3.desc": "Passez en ligne, acceptez les demandes, gérez vos courses actives et suivez vos gains en direct.",
 
   // Download QR
-  "dl.qr.user": "Scannez pour télécharger TIM",
-  "dl.qr.agent": "Scannez pour télécharger TIM Agent",
+  "dl.qr.user": "Scannez pour télécharger TimWay",
+  "dl.qr.agent": "Scannez pour télécharger TimWay Agent",
   "dl.qr.scan": "Scanner pour télécharger",
 
   // Lang switch
