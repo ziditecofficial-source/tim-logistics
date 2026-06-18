@@ -6,48 +6,56 @@
 
 @layer base {
   :root {
-    --background: 33 56% 97%;          /* cream #FBF6EE-ish */
-    --foreground: 24 30% 12%;          /* deep warm brown */
+    /* TimWay Brand */
+    --background: 0.985 0.005 80;
+    --foreground: 0.18 0.015 50;
+    --ink: 0.13 0.015 50;
+    --ink-muted: 0.45 0.012 50;
 
-    --card: 0 0% 100%;
-    --card-foreground: 24 30% 12%;
+    --surface: 0.97 0.008 70;
+    --surface-elevated: 1 0 0;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 24 30% 12%;
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.015 50;
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.015 50;
 
-    --primary: 18 95% 55%;             /* TimWay orange */
-    --primary-foreground: 33 56% 97%;
-    --primary-glow: 28 100% 65%;       /* lighter orange for gradients */
-    --primary-deep: 14 85% 45%;        /* deeper coral */
+    --primary: 0.68 0.19 42;
+    --primary-foreground: 0.99 0 0;
+    --primary-glow: 0.78 0.17 50;
+    --primary-deep: 0.6 0.22 25;
 
-    --secondary: 33 40% 92%;
-    --secondary-foreground: 24 30% 12%;
+    --secondary: 0.94 0.01 70;
+    --secondary-foreground: 0.2 0.015 50;
 
-    --muted: 33 30% 94%;
-    --muted-foreground: 24 10% 40%;
+    --muted: 0.95 0.008 70;
+    --muted-foreground: 0.5 0.012 50;
 
-    --accent: 28 100% 92%;             /* peach accent */
-    --accent-foreground: 14 85% 35%;
+    --accent: 0.92 0.04 50;
+    --accent-foreground: 0.2 0.015 50;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0.6 0.22 25;
+    --destructive-foreground: 0.99 0 0;
 
-    --border: 30 25% 88%;
-    --input: 30 25% 88%;
-    --ring: 18 95% 55%;
+    --border: 0.9 0.008 70;
+    --input: 0.92 0.008 70;
+    --ring: 0.68 0.19 42;
 
     --radius: 1rem;
 
     /* Brand gradients & shadows */
-    --gradient-hero: linear-gradient(135deg, hsl(33 70% 96%) 0%, hsl(28 80% 92%) 100%);
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-glow)) 100%);
-    --gradient-warm: linear-gradient(180deg, hsl(33 56% 97%) 0%, hsl(28 60% 94%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(33 50% 98%) 100%);
+    --gradient-brand: linear-gradient(135deg, oklch(0.72 0.2 45), oklch(0.6 0.21 30));
+    --gradient-hero: radial-gradient(80% 60% at 70% 20%, oklch(0.72 0.2 45 / 0.35), transparent 60%),
+                     radial-gradient(60% 50% at 10% 80%, oklch(0.55 0.18 30 / 0.25), transparent 60%);
+    --gradient-mesh: conic-gradient(from 220deg at 50% 50%, oklch(0.72 0.2 45 / 0.4), oklch(0.6 0.21 30 / 0.2), oklch(0.3 0.05 50 / 0.1), oklch(0.72 0.2 45 / 0.4));
+    --gradient-primary: linear-gradient(135deg, oklch(var(--primary)) 0%, oklch(var(--primary-glow)) 100%);
+    --gradient-warm: linear-gradient(180deg, oklch(0.985 0.005 80) 0%, oklch(0.94 0.01 70) 100%);
+    --gradient-card: linear-gradient(145deg, oklch(1 0 0) 0%, oklch(0.97 0.008 70) 100%);
 
-    --shadow-soft: 0 4px 20px -4px hsl(24 30% 20% / 0.08);
-    --shadow-card: 0 10px 40px -12px hsl(18 80% 40% / 0.15);
-    --shadow-glow: 0 20px 60px -20px hsl(var(--primary) / 0.45);
-    --shadow-cta: 0 12px 30px -10px hsl(var(--primary) / 0.55);
+    --shadow-soft: 0 4px 20px -4px oklch(0.18 0.015 50 / 0.08);
+    --shadow-card: 0 10px 40px -12px oklch(0.68 0.19 42 / 0.15);
+    --shadow-glow: 0 20px 60px -20px oklch(var(--primary) / 0.45);
+    --shadow-cta: 0 12px 30px -10px oklch(var(--primary) / 0.55);
 
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -62,23 +70,34 @@
   }
 
   .dark {
-    --background: 24 25% 8%;
-    --foreground: 33 40% 95%;
-    --card: 24 25% 11%;
-    --card-foreground: 33 40% 95%;
-    --popover: 24 25% 11%;
-    --popover-foreground: 33 40% 95%;
-    --primary: 18 95% 58%;
-    --primary-foreground: 24 25% 8%;
-    --secondary: 24 20% 16%;
-    --secondary-foreground: 33 40% 95%;
-    --muted: 24 20% 16%;
-    --muted-foreground: 33 15% 65%;
-    --accent: 24 20% 16%;
-    --accent-foreground: 18 95% 58%;
-    --border: 24 20% 18%;
-    --input: 24 20% 18%;
-    --ring: 18 95% 58%;
+    --background: 0.13 0.015 50;
+    --foreground: 0.97 0.005 80;
+    --ink: 0.97 0.005 80;
+    --ink-muted: 0.7 0.01 70;
+    
+    --surface: 0.17 0.015 50;
+    --surface-elevated: 0.2 0.015 50;
+    
+    --card: 0.17 0.015 50;
+    --card-foreground: 0.97 0.005 80;
+    --popover: 0.17 0.015 50;
+    --popover-foreground: 0.97 0.005 80;
+    
+    --primary: 0.72 0.2 45;
+    --primary-foreground: 0.13 0.015 50;
+    
+    --secondary: 0.22 0.015 50;
+    --secondary-foreground: 0.97 0.005 80;
+    
+    --muted: 0.22 0.015 50;
+    --muted-foreground: 0.65 0.01 70;
+    
+    --accent: 0.25 0.04 50;
+    --accent-foreground: 0.97 0.005 80;
+    
+    --border: 1 0 0 / 8%;
+    --input: 1 0 0 / 12%;
+    --ring: 0.72 0.2 45;
   }
 }
 
@@ -95,7 +114,9 @@
 }
 
 @layer utilities {
-  .bg-gradient-hero { background: var(--gradient-hero); }
+  .bg-gradient-brand { background-image: var(--gradient-brand); }
+  .bg-gradient-hero { background-image: var(--gradient-hero); }
+  .bg-gradient-mesh { background-image: var(--gradient-mesh); }
   .bg-gradient-primary { background: var(--gradient-primary); }
   .bg-gradient-warm { background: var(--gradient-warm); }
   .bg-gradient-card { background: var(--gradient-card); }
@@ -104,4 +125,17 @@
   .shadow-glow { box-shadow: var(--shadow-glow); }
   .shadow-cta { box-shadow: var(--shadow-cta); }
   .transition-smooth { transition: var(--transition-smooth); }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
 }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.animate-float { animation: float 6s ease-in-out infinite; }
